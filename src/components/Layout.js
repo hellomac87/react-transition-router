@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 class Layout extends Component {
   render() {
@@ -16,7 +16,9 @@ class Layout extends Component {
           <Link to="/">home</Link>
           <Link to="/demo">demo</Link>
         </header>
+
         {this.props.children}
+
         <footer
           style={{
             width: "100%",
@@ -32,4 +34,4 @@ class Layout extends Component {
   }
 }
 
-export default Layout;
+export default withRouter(Layout);

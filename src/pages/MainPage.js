@@ -5,11 +5,9 @@ import Layout from "../components/Layout";
 class MainPage extends Component {
   render() {
     return (
-      <div>
-        <Layout>
-          <MainContainer />
-        </Layout>
-      </div>
+      <Layout>
+        <MainContainer />
+      </Layout>
     );
   }
 }
